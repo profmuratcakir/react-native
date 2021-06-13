@@ -2,6 +2,8 @@ import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Merhaba from "./Merhaba";
+import Images from "./Images";
+
 //* ======REACT NATIVE TEMEL KOMPONENTLERİ ==========
 //?- View componenti genel olarak div elemanına benzetilebilir
 //?  ve bir container oluşturur. Ama içerisine yazı yazılamaz.
@@ -13,7 +15,6 @@ import Merhaba from "./Merhaba";
 export default function App() {
   return (
     <View style={stiller.kutu}>
-      <Merhaba />
       <Text style={stiller.baslik}>Merhaba Mobile Devs</Text>
       <Text style={stiller.baslik}>React Native Dersimize Hos Geldiniz..</Text>
 
@@ -21,8 +22,9 @@ export default function App() {
         Bu bir parent text dir. {"\n"}
         <Text>Bu da bir child text'tir.</Text>
       </Text>
-      <Merhaba />
-      <Merhaba />
+      <Merhaba name="Ahmet" renk="blue" size="30" />
+      <Merhaba name="Canan" renk="yellow" size="40" />
+      <Images />
       <StatusBar style="auto" />
     </View>
   );
@@ -39,7 +41,6 @@ export default function App() {
 const stiller = StyleSheet.create({
   kutu: {
     flex: 1,
-    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "lightblue",
