@@ -86,7 +86,7 @@ export default ButtonRNE;
 
 const styles = StyleSheet.create({
   container: {
-    width: 400,
+    width: 300,
     alignItems: "center",
   },
 
