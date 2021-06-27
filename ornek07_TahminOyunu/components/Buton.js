@@ -4,7 +4,7 @@ import Renkler from "../constants/renkler";
 import globalStyles from "../constants/globalStyles";
 const Buton = (props) => {
   return (
-    <TouchableOpacity activeOpacity={0.5} onPress={props.kontrolEt}>
+    <TouchableOpacity activeOpacity={0.5} onPress={props.onPress}>
       <View style={{ ...styles.button, ...props.style }}>
         <Text style={[styles.text, globalStyles.fontNunitoBold]}>
           {props.children}{" "}
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "white",
-    fontSize: 20,
+    fontSize: 25,
     textAlign: "center",
   },
 });

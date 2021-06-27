@@ -1,13 +1,9 @@
 {
   "expo": {
-    "name": "my-project",
-    "slug": "my-project",
+    "name": "guess-my-number",
+    "slug": "guess-my-number",
     "privacy": "public",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,11 +15,17 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
-    }
+      "bundleIdentifier": "com.techproed.guessMyNumber",
+      "buildNumber": "1.0.0",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.techproed.guessMyNumber",
+      "softwareKeyboardLayoutMode": "pan",
+      "versionCode": 1
+    },
+    "description": ""
   }
 }

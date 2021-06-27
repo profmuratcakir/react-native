@@ -13,4 +13,10 @@ export default StyleSheet.create({
   fontNunitoLight: {
     fontFamily: "Nunito_400Regular",
   },
+  golge: {
+    shadowColor: "black",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    elevation: 9,
+  },
 });
